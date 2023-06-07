@@ -1,6 +1,9 @@
 ---
 Типовые команды для запуска контейнера c backend-сервером: 
 
+docker run -p 8000:8000 -e SECRET_KEY=mysecretkey -e DB_NAME=mydatabase -e DB_USER=myuser -e DB_PASSWORD=mypassword -e DB_HOST=myhost -e DB_PORT=myport myproject
+
+
 ---
 Запросы, которые должны быть реализованы в системе:
 
