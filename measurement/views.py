@@ -2,6 +2,7 @@
 # TODO: ListCreateAPIView, RetrieveUpdateAPIView, CreateAPIView
 from datetime import datetime
 
+from django.http import HttpResponse
 from rest_framework.decorators import api_view
 from rest_framework.generics import ListAPIView, RetrieveAPIView, CreateAPIView, RetrieveUpdateAPIView
 from rest_framework.response import Response
@@ -44,3 +45,5 @@ class Sensor_create(CreateAPIView):
     queryset = Measurement.objects.all()
     serializer_class = SensorSerializer
 
+def Status_OK(request):
+    return HttpResponse('OK')
